@@ -1,0 +1,30 @@
+.youtube {
+  height: 120vh;
+  display: flex;
+
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  .heading-2 {
+    margin-bottom: 1em;
+    &::after {
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+
+  &-list {
+    margin-top: 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    overflow: hidden;
+    &-wrapper {
+      display: flex;
+      &-item {
+        margin-right: 1em;
+      }
+    }
+  }
+}
