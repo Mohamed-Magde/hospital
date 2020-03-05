@@ -383,6 +383,7 @@ li:hover .nav-up-list-item-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-top: -10vh;
   overflow: hidden;
 }
 
