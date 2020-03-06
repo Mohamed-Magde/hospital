@@ -1,0 +1,101 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: #fff;
+  background-color: darken($color: $dark, $amount: 5);
+  font-family: sans-serif;
+  line-height: 1.7;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+  display: block;
+  margin-bottom: 1em;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  display: block;
+}
+
+.container {
+  width: 75%;
+  margin: 0 auto;
+}
+
+/// typography
+.heading-1 {
+  font-size: 4rem;
+  font-weight: normal;
+  margin-bottom: 0;
+  font-family: "Playfair Display", serif;
+}
+
+.heading-2 {
+  font-size: 3rem;
+  font-weight: normal;
+  margin-bottom: 2em;
+  font-family: "Playfair Display", serif;
+  position: relative;
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -0.5em;
+    left: 0;
+
+    width: 4em;
+    height: 2px;
+    background-color: $primary;
+  }
+}
+
+/// buttons
+.btn-primary {
+  color: #fff;
+  background-color: $primary;
+  padding: 1em 2em;
+  text-align: center;
+  width: 35%;
+  margin-top: 2em;
+  transition: all 0.5s;
+  &:hover {
+    color: $primary;
+    background-color: #fff;
+  }
+}
+
+.heading-3 {
+  font-size: 2rem;
+  font-weight: normal;
+  margin-bottom: 2em;
+  font-family: "Playfair Display", serif;
+  position: relative;
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -0.5em;
+    left: 50%;
+    transform: translateX(-50%);
+
+    width: 4em;
+    height: 2px;
+    background-color: $primary;
+  }
+}

@@ -10,14 +10,14 @@
     .heading-1 {
       background-color: $dark;
       color: #fff;
-      padding: 0.5em 1em;
+      padding: 0em 1em;
       padding-right: 3em;
       animation: btn 5s 1;
       align-self: center;
       clip-path: polygon(0 0, 80% 0%, 100% 100%, 0% 100%);
       box-shadow: 2px 10px 15px rgba(#000, 0.5);
     }
-    margin-bottom: 4em;
+    margin-bottom: -1em;
   }
 
   .slideshow-container {

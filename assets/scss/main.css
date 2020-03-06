@@ -401,13 +401,14 @@ li:hover .nav-up-list-item-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-top: -10vh;
+  margin-top: 10vh;
   overflow: hidden;
+  position: relative;
 }
 
 .header .heading-1 {
   background-color: #fff;
-  padding: 0.3em 1em;
+  padding: 0em 1em;
   padding-right: 3em;
   -webkit-animation: btn 5s 1;
           animation: btn 5s 1;
@@ -439,7 +440,7 @@ li:hover .nav-up-list-item-list {
 }
 
 .header-content {
-  height: 100vh;
+  height: 80vh;
 }
 
 .header-content img {
@@ -456,7 +457,6 @@ li:hover .nav-up-list-item-list {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  height: 50vh;
 }
 
 .header .wrapper-title {
@@ -473,7 +473,6 @@ li:hover .nav-up-list-item-list {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: start;
-  position: relative;
 }
 
 .header .wrapper-title-container {
@@ -482,6 +481,15 @@ li:hover .nav-up-list-item-list {
   top: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding-left: 20%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -808,13 +816,13 @@ li:hover .nav-up-list-item-list {
       -ms-flex-pack: center;
           justify-content: center;
   margin-bottom: -8em;
-  margin-bottom: 4em;
+  margin-bottom: -1em;
 }
 
 .program-title .heading-1 {
   background-color: #002144;
   color: #fff;
-  padding: 0.5em 1em;
+  padding: 0em 1em;
   padding-right: 3em;
   -webkit-animation: btn 5s 1;
           animation: btn 5s 1;
@@ -1480,6 +1488,7 @@ li
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  position: relative;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -1527,6 +1536,81 @@ li
 
 .youtube-list-wrapper-item {
   margin-right: 1em;
+}
+
+.youtube-container {
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.youtube-container-slide {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.youtube-container-slide iframe {
+  width: 30%;
+}
+
+.youtube-container-slide iframe:nth-child(1) {
+  -webkit-animation: fade-youtube 0.5s 1;
+          animation: fade-youtube 0.5s 1;
+}
+
+.youtube-container-slide iframe:nth-child(2) {
+  -webkit-animation: fade-youtube 1s 1;
+          animation: fade-youtube 1s 1;
+}
+
+.youtube-container-slide iframe:nth-child(3) {
+  -webkit-animation: fade-youtube 1.5s 1;
+          animation: fade-youtube 1.5s 1;
+}
+
+@-webkit-keyframes fade-youtube {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+@keyframes fade-youtube {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
 }
 
 .header-blog {
@@ -1665,7 +1749,7 @@ li
 
 .contact {
   width: 100%;
-  height: 90vh;
+  height: 120vh;
   text-align: center;
   padding-top: 5em;
   background-color: #001a35;
@@ -1725,7 +1809,7 @@ li
 
 .contact .container .contact-form textarea {
   width: 100%;
-  height: 50%;
+  height: 100%;
   padding-top: 1em;
   padding-left: 1em;
   background-color: #002144;

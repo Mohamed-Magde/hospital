@@ -47,3 +47,20 @@ function showSlidesNew() {
   slides[newSlideIndex - 1].style.display = "block";
   setTimeout(showSlidesNew, 5000); // Change image every 2 seconds
 }
+
+var youtubeSlide = 0;
+showYoutubeSlides();
+
+function showYoutubeSlides() {
+  var i;
+  var slides = document.getElementsByClassName("youtube-container-slide");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  youtubeSlide++;
+  if (youtubeSlide > slides.length) {
+    youtubeSlide = 1;
+  }
+  slides[youtubeSlide - 1].style.display = "block";
+  setTimeout(showYoutubeSlides, 4000); // Change image every 2 seconds
+}

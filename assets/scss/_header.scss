@@ -1,10 +1,12 @@
 .header {
   display: flex;
-  margin-top: -10vh;
+  margin-top: 10vh;
   overflow: hidden;
+  position: relative;
+
   .heading-1 {
     background-color: #fff;
-    padding: 0.3em 1em;
+    padding: 0em 1em;
     padding-right: 3em;
     animation: btn 5s 1;
 
@@ -29,7 +31,7 @@
   }
 
   &-content {
-    height: 100vh;
+    height: 80vh;
     img {
       max-width: 100%;
     }
@@ -38,19 +40,23 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 50vh;
     &-title {
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: start;
-      position: relative;
 
       &-container {
         position: absolute;
         left: 50%;
         top: 50%;
         transform: translate(-50%, -50%);
+        width: 100%;
+        height: 100%;
+        justify-content: center;
+        align-items: flex-start;
+        padding-left: 20%;
+
         display: flex;
         flex-direction: column;
       }
