@@ -17,7 +17,7 @@
   .btn-primary {
     box-shadow: 2px 10px 15px rgba(#000, 0.5);
     align-self: flex-start;
-    animation: btn 5s 1;
+    animation: btnY 2s 1;
   }
 
   p {
@@ -27,7 +27,7 @@
     padding: 1em 1em;
     padding-right: 3em;
     box-shadow: 2px 10px 15px rgba(#000, 0.5);
-    animation: btn 5s 1;
+    animation: btnText 2s 1;
   }
 
   &-content {
@@ -73,5 +73,28 @@
   100% {
     opacity: 1;
     transform: translateX(0%);
+  }
+}
+
+@keyframes btnText {
+  0% {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+}
+@keyframes btnY {
+  0% {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
   }
 }

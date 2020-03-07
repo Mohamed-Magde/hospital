@@ -64,3 +64,20 @@ function showYoutubeSlides() {
   slides[youtubeSlide - 1].style.display = "block";
   setTimeout(showYoutubeSlides, 4000); // Change image every 2 seconds
 }
+
+var blogSlide = 0;
+showblogSlides();
+
+function showblogSlides() {
+  var i;
+  var slides = document.getElementsByClassName("features-slide");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  blogSlide++;
+  if (blogSlide > slides.length) {
+    blogSlide = 1;
+  }
+  slides[blogSlide - 1].style.display = "block";
+  setTimeout(showblogSlides, 4000); // Change image every 2 seconds
+}
