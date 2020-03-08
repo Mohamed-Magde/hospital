@@ -279,12 +279,12 @@
             <h2 class="heading-2">ابقى على تواصل</h2>
             <p>املأ الفورم للحصول على استشارات مجانية</p>
           </div>
-          <form action="" class="contact-form">
+          <form action="POST" data-netlify="true" class="contact-form">
             <div class="contact-form-item">
-              <input type="text" placeholder="Name" />
+              <input id="name" type="text" placeholder="Name" />
             </div>
             <div class="contact-form-item">
-              <input type="email" placeholder="Email" />
+              <input id="email" type="email" placeholder="Email" />
             </div>
             <div class="contact-form-item bg-grid">
               <textarea
@@ -295,10 +295,10 @@
                 placeholder="Message"
               ></textarea>
             </div>
+            <div class="buttons">
+              <input type="submit" value="إرسال" href="" class="btn-primary" />
+            </div>
           </form>
-          <div class="buttons">
-            <a href="" class="btn-primary">إرسال</a>
-          </div>
         </div>
       </section>
       <footer class="footer">
