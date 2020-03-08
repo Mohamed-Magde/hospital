@@ -7,7 +7,6 @@
   z-index: 66666;
   background-color: #fff;
   padding-top: 0.5em;
-  color: $dark;
 
   img {
     width: 15em;
@@ -114,7 +113,10 @@
             color: darken($color: $light-grey, $amount: 30);
           }
           .social {
-            color: darken($color: $light-grey, $amount: 30);
+            display: flex;
+            a {
+              color: darken($color: $light-grey, $amount: 30);
+            }
             i {
               margin-right: 0.5em;
               font-size: 1.5rem;
