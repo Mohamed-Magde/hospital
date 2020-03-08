@@ -311,6 +311,12 @@ li:hover .nav-up-list-item-list {
 }
 
 .nav-down-info-block-item .social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.nav-down-info-block-item .social a {
   color: #889eb0;
 }
 
