@@ -1739,6 +1739,15 @@ li
   min-height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  -webkit-animation: btnText 2s 1;
+          animation: btnText 2s 1;
+}
+
+.header-blog figure .lg {
+  min-width: 100%;
+  min-height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .blog-wrapper {
@@ -1763,6 +1772,8 @@ li
   max-height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  -webkit-animation: btn 2s 1;
+          animation: btn 2s 1;
 }
 
 .blog-block .heading-2 {
@@ -1781,15 +1792,37 @@ li
 }
 
 .blog-block-name img {
-  max-width: 100%;
-  max-height: 100%;
+  min-width: 100%;
+  max-height: 70%;
   -o-object-fit: cover;
      object-fit: cover;
+  -webkit-box-shadow: 0px 3px 30px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 3px 30px rgba(0, 0, 0, 0.25);
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  margin-bottom: 1em;
+}
+
+.blog-block-name img:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-box-shadow: 0px 6px 100px rgba(0, 0, 0, 0.7);
+          box-shadow: 0px 6px 100px rgba(0, 0, 0, 0.7);
+}
+
+.blog-block-name img:nth-child(4) {
+  height: 20%;
+}
+
+.blog-block-name img:nth-child(5) {
+  height: 18%;
 }
 
 .blog-block-text {
   background-color: #fff;
   color: #7992a6;
+  -webkit-animation: btn 2.5s 1;
+          animation: btn 2.5s 1;
 }
 
 .blog-block-text-content {
